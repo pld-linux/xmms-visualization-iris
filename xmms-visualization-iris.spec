@@ -2,7 +2,7 @@ Summary:	XMMS - iris visualization plugin
 Summary(pl):	XMMS - wtyczka do wizualizacji iris
 Name:		xmms-visualization-iris
 Version:	0.9
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://cdelfosse.free.fr/xmms-iris/iris-%{version}.tar.gz
