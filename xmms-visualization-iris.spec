@@ -7,12 +7,15 @@ License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://cdelfosse.free.fr/xmms-iris/iris-%{version}.tar.gz
 URL:		http://cdelfosse.free.fr/xmms-iris/
-BuildRequires:	XFree86-OpenGL-devel
+BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	xmms-devel
+Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
 %define 	_prefix		/usr/X11R6
 
@@ -20,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Iris visualization plugin for XMMS.
 
 %description -l pl
-Wytczka do wizualizacji iris dla XMMS.
+Wtyczka do wizualizacji iris dla XMMS.
 
 %prep
 %setup -q -n iris-%{version}
