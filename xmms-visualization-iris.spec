@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://cdelfosse.free.fr/xmms-iris/iris-%{version}.tar.gz
+# Source0-md5:	3f49d936f069765b7d317e188cf89404
 URL:		http://cdelfosse.free.fr/xmms-iris/
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
