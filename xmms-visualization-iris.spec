@@ -31,7 +31,7 @@ Wtyczka do wizualizacji iris dla XMMS.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
