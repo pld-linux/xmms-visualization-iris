@@ -1,15 +1,12 @@
-Summary:	XMMS - iris visualization plugin.
-Summary(pl):	XMMS - wtyczka do wizualizacji iris.
+Summary:	XMMS - iris visualization plugin
+Summary(pl):	XMMS - wtyczka do wizualizacji iris
 Name:		xmms-visualization-iris
 Version:	0.9
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	glib-devel
-BuildRequires:	gtk+-devel
 BuildRequires:	xmms-devel
-BuildRequires:	XFree86-OpenGL-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
