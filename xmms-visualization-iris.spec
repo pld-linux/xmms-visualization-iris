@@ -2,10 +2,11 @@ Summary:	XMMS - iris visualization plugin
 Summary(pl):	XMMS - wtyczka do wizualizacji iris
 Name:		xmms-visualization-iris
 Version:	0.10
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://cdelfosse.free.fr/xmms-iris/iris-%{version}.tar.gz
+# Source0-md5:	7c922e08884a79015b7e8e0f2a9815ca
 URL:		http://cdelfosse.free.fr/xmms-iris/
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
@@ -16,7 +17,6 @@ Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
-
 %define 	_prefix		/usr/X11R6
 
 %description
@@ -40,7 +40,8 @@ aclocal
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	 DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
