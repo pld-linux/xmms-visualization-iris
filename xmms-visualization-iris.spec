@@ -1,5 +1,5 @@
 Summary:	XMMS - iris visualization plugin
-Summary(pl.UTF-8):   Wtyczka wizualizacji iris dla XMMS-a
+Summary(pl.UTF-8):	Wtyczka wizualizacji iris dla XMMS-a
 Name:		xmms-visualization-iris
 Version:	0.12
 Release:	1
